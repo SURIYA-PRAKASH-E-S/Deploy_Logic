@@ -15,7 +15,7 @@ const Register = () => {
     e.preventDefault();
     
     try {
-      const res = await axios.post('http://localhost:5000/api/register', user)
+      const res = await axios.post('https://deploy-logic-api.vercel.app/register', user)
       setUser({ name: "", email: "", pass: "" })
       navigate('/login')
       window.alert(res.data.msg)     
