@@ -20,7 +20,7 @@ app.use(express.json())
 app.use(cookieParser())
 // Cross Origin Resource Sharing
 app.use(cors({
-    origin: "http://localhost:5500",
+    origin: "https://deploy-logic-api.vercel.app",
     methods: ["GET", "POST"],
     credentials: true
 }))
