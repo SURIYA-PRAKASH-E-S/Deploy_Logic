@@ -34,7 +34,7 @@ app.use('/uploads', express.static('uploads'));
 
 // Mongo DataBase Connection
 
-const url = "mongodb+srv://suriyaes:12345@logic.xhtqo.mongodb.net/"
+const url = "mongodb+srv://suriyaes:12345@logic.xhtqo.mongodb.net/logic?retryWrites=true&w=majority&appName=logic"
 mongoose.connect(url)
 .then(() => { console.log("DataBase Connected" )})
 .catch(() => console.error("Error Occured"))
